@@ -4,6 +4,51 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css\wallpaper_2_style.css" type="text/css">
+
+  <script type="importmap">
+    {
+      "imports": {
+        "@google/generative-ai": "https://esm.run/@google/generative-ai"
+      }
+    }
+  </script>
+  <script type="module">
+    import { GoogleGenerativeAI } from "@google/generative-ai";
+
+    // Busque sua CHAVE_API
+    const API_KEY = "AIzaSyDgvEr7Df4PcqFhjOVp7tAqo0Dl5Q-Ywfw";
+    // Lembrete: Isso deve ser apenas para testes locais
+
+    // Acesse sua chave API (veja "Configurar sua chave API" acima)
+    const genAI = new GoogleGenerativeAI(API_KEY);
+
+    async function run(valor) { // Adicionei o parâmetro valor
+      // Os modelos Gemini 1.5 são versáteis e funcionam com prompts de texto e multimídia
+      const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash"});
+
+      const prompt = valor; // Use o parâmetro valor
+
+      const result = await model.generateContent(prompt);
+      const response = await result.response;
+      const text = await response.text(); // Adicionei await aqui
+
+      // Selecione o elemento com o ID "resultado"
+      const resultadoElement = document.getElementById('p-respota');
+      const newMessageElement = document.createElement('p');
+      newMessageElement.textContent = text;
+      resultadoElement.appendChild(newMessageElement);
+    }
+
+    // Adicionei a função enviar() aqui
+    function enviar(event) {
+      event.preventDefault(); // Add this line
+      var valor = document.getElementById("quest").value;
+      run(valor); // Chama a função run() e passa o valor como parâmetro
+    }
+    document.getElementById("confirmar").addEventListener("click", function(event) {
+      enviar(event);
+    });
+  </script>
 </head>
 <header>
   <title>D&Gemini</title>
@@ -211,16 +256,16 @@
         </span>
       </div> 
       <div class="section1-container">
-        <div class="p-respota">
-          <p>
-            In the heart of a medieval forest, under the dim light of a crescent moon, a fierce battle raged between a lone knight and a hulking armored warrior. The knight, clad in gleaming silver armor, wielded a shimmering blade that crackled with magical energy. Her opponent, a monstrous knight encased in black steel, countered with a massive broadsword. Sparks flew as their blades clashed, the sound echoing through the silent trees.
+        <div class="p-respota" id="p-respota">
+          <p id="resultado">
+            No coração de uma floresta medieval, sob a tênue luz da lua crescente, uma feroz batalha acontecia entre uma solitária cavaleira e um guerreiro corpulento e blindado. A cavaleira, vestida em reluzente armadura prateada, empunhava uma espada cintilante que crepitava com energia mágica. Seu oponente, um monstruoso cavaleiro envolto em aço negro, contra-atacava com uma enorme espada larga. Faíscas voavam à medida que suas lâminas colidiam, o som ecoando pelas árvores silenciosas.
           </p>
         </div>
         <div class="area-pergunta">
         <form action="">
           <label for="quest">
           <input class="quest" type="text" id="quest" name="quest" >
-          <button>
+          <button id="confirmar">
             <img src="/img_vetor/send.svg" alt="">
           </button>
           </label>
