@@ -4,7 +4,7 @@ D&Gemini é um website projetado para oferecer suporte e melhorar a experiência
 
 O projeto visa integrar inteligência artificial para proporcionar funcionalidades que auxiliam mestres e jogadores durante suas sessões de RPG, promovendo uma jogabilidade mais fluida e imersiva.
 
-<img text-align='center' src='Projeto_DD.png'>
+<img src='Projeto_DD.png'>
 
 ## Funcionalidades Principais
 
@@ -14,15 +14,8 @@ O projeto visa integrar inteligência artificial para proporcionar funcionalidad
   
 - **Gestão de Personagens**: Capacidade de criar e gerenciar fichas de personagens, incluindo armazenamento de informações importantes.
 
-## Como Usar
+## Time de Desenvolvedores
 
-1. **Instalação**:
-   - Clone o repositório para sua máquina local.
-   - Execute `npm install` para instalar as dependências necessárias.
-
-2. **Configuração**:
-   - Configure as variáveis de ambiente necessárias conforme descrito no arquivo `.env.example`.
-
-3. **Execução**:
-   - Inicie o servidor local com `npm start`.
-   - Acesse o website através do navegador usando o endereço local indicado.
+https://github.com/CaioJoseGP
+https://github.com/AllanGS07
+https://github.com/Felipemonrod
