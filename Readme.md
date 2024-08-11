@@ -4,7 +4,7 @@ D&Gemini é um website projetado para oferecer suporte e melhorar a experiência
 
 O projeto visa integrar inteligência artificial para proporcionar funcionalidades que auxiliam mestres e jogadores durante suas sessões de RPG, promovendo uma jogabilidade mais fluida e imersiva.
 
-<img src='Projeto_DD.png'>
+<img src='Projeto_DD.png' alt='Imagem do Projeto D&Gemini, preta.'>
 
 ## Funcionalidades Principais
 
@@ -16,6 +16,6 @@ O projeto visa integrar inteligência artificial para proporcionar funcionalidad
 
 ## Time de Desenvolvedores
 
-https://github.com/CaioJoseGP
-https://github.com/AllanGS07
-https://github.com/Felipemonrod
+* https://github.com/CaioJoseGP
+* https://github.com/AllanGS07
+* https://github.com/Felipemonrod
