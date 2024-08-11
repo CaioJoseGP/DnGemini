@@ -4,7 +4,7 @@ D&Gemini é um website projetado para oferecer suporte e melhorar a experiência
 
 O projeto visa integrar inteligência artificial para proporcionar funcionalidades que auxiliam mestres e jogadores durante suas sessões de RPG, promovendo uma jogabilidade mais fluida e imersiva.
 
-<img align='center' src='Projeto_DD.png'>
+<img text-align='center' src='Projeto_DD.png'>
 
 ## Funcionalidades Principais
 
