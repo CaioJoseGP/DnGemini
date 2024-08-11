@@ -6,14 +6,7 @@ include "../DAO/usuarioDAO.php";
 $msg = "";
 
 if(!empty($_POST)){
-    $objeto = new Usuario();
-    $objeto->set("email", $_POST["email"]);
-    $dados = $objeto->consultarUsuarioPorEmail();
-    foreach ($dados as $chave => $valor){
-        if ($valor["email"] == $_POST["email"] && $valor["senha"] == $_POST["password"]){
-            header('Location: cadastro.php');
-        }
-    }
+    header('Location: wallpaper_2.html');
 }
 ?>
 
@@ -38,7 +31,7 @@ if(!empty($_POST)){
         </div>
 
         <div id="form">
-            <form id="form-login">
+            <form id="form-login" method="$_POST">
                 <h1>Login</h1>
     
                 <input name="email" id="email" type="text" placeholder="Email:" required>

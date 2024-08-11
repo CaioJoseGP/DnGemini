@@ -40,7 +40,7 @@ if (!empty($_POST)){
         </div>
 
         <div id="form">
-            <form id="form-cadastro">
+            <form id="form-cadastro" method="$_POST">
                 <input name="name" id="name" type="text" placeholder="Nome:" required>
                 <input name="email" id="email" type="text" placeholder="Email:" required>
                 <input name="password" id="password" type="text" placeholder="Senha:" required>
