@@ -35,7 +35,7 @@ if(!empty($_POST)){
                 <h1>Login</h1>
     
                 <input name="email" id="email" type="text" placeholder="Email:" required>
-                <input name="password" id="password" type="text" placeholder="Senha:" required>
+                <input name="password" id="password" type="password" placeholder="Senha:" required>
     
                 <a id="pass-forgot" href="pass_forgot.html">Esqueceu a senha?</a>
                 
