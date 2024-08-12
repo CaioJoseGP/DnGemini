@@ -1,6 +1,6 @@
 # D&Gemini
 
-D&Gemini é um website projetado para oferecer suporte e melhorar a experiência dos jogadores de RPG de mesa, especialmente voltado para Dungeons & Dragons (D&D).
+D&Gemini é um (futuro) website/app projetado para oferecer suporte e melhorar a experiência dos jogadores de RPG de mesa, especialmente voltado para Dungeons & Dragons (D&D).
 
 O projeto visa integrar inteligência artificial para proporcionar funcionalidades que auxiliam mestres e jogadores durante suas sessões de RPG, promovendo uma jogabilidade mais fluida e imersiva.
 
