@@ -6,7 +6,17 @@ include "../DAO/usuarioDAO.php";
 $msg = "";
 
 if(!empty($_POST)){
-    header('Location: wallpaper_2.html');
+    $objeto = new Usuario();
+    $objeto->set("email", $_POST["email"]);
+    $objeto->set("senha",  $_POST["password"]);
+    $dados = $objeto->consultarUsuarioPorEmail();
+    foreach ($dados as $chave => $valor) {
+        if ($valor["email"] == $_POST["email"] && $valor["senha"] == $_POST["password"]){
+            header("Location: wallpaper_2.html");
+        } else {
+            $msg = "Email ou senha incorretos";
+        }
+    }
 }
 ?>
 
@@ -38,7 +48,7 @@ if(!empty($_POST)){
                 <input name="password" id="password" type="password" placeholder="Senha:" required>
     
                 <a id="pass-forgot" href="pass_forgot.html">Esqueceu a senha?</a>
-                
+                <?php echo $msg; ?>
                 <div id="form-buttons">
                     <a href="cadastro.php">Cadastre-se</a>
                     <input name="entrar" id="entrar" type="submit" value="Entrar">

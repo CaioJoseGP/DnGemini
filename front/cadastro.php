@@ -7,9 +7,9 @@ $msg = "";
 
 if (!empty($_POST)){
     $objeto = new Usuario();
-    $objeto->set("nome", $_POST["nome"]);
+    $objeto->set("nome", $_POST["name"]);
     $objeto->set("email",  $_POST["email"]);
-    $objeto->set("senha",  $_POST["senha"]);
+    $objeto->set("senha",  $_POST["password"]);
 
     foreach($_POST as $chave=>$campo) {
         if($campo == "Cadastrar-se"){  
@@ -51,7 +51,7 @@ if (!empty($_POST)){
                 </p>
                 
                 <?php echo $msg; ?>
-                <input name="btnCadastrar" id="btnCadastrar" type="submit" value="Cadastre-se">
+                <input name="btnCadastrar" id="btnCadastrar" type="submit" value="Cadastrar-se">
             </form>
         </div>
     </div>
