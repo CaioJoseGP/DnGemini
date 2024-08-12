@@ -40,11 +40,11 @@ if (!empty($_POST)){
         </div>
 
         <div id="form">
-            <form id="form-cadastro" method="$_POST">
+            <form id="form-cadastro" method="$_POST" action="">
                 <input name="name" id="name" type="text" placeholder="Nome:" required>
                 <input name="email" id="email" type="text" placeholder="Email:" required>
                 <input name="password" id="password" type="password" placeholder="Senha:" required>
-                <input name="conf-password" id="conf-password" type="text" placeholder="Confirmar Senha:" required>
+                <input name="conf-password" id="conf-password" type="password" placeholder="Confirmar Senha:" required>
     
                 <p>
                     Já possui uma conta? <a href="login.php">Faça Login</a>
