@@ -31,7 +31,7 @@ if(!empty($_POST)){
         </div>
 
         <div id="form">
-            <form id="form-login" method="$_POST" action="">
+            <form id="form-login" method="post" action="">
                 <h1>Login</h1>
     
                 <input name="email" id="email" type="text" placeholder="Email:" required>
